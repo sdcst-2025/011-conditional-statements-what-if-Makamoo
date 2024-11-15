@@ -33,3 +33,62 @@ that is an obtuse triangle
 
 
 """
+import math
+charmander = int(input("side 1:"))
+bulbasaur = int(input("side 2:"))
+squirtle = int(input("side 3:"))
+if charmander > bulbasaur:
+    if charmander > squirtle:
+        pikachu = charmander
+    elif squirtle > charmander:
+        pikachu = squirtle
+elif bulbasaur > charmander:
+    if bulbasaur > squirtle:
+        pikachu = bulbasaur
+    elif squirtle > bulbasaur:
+        pikachu = squirtle
+else:
+    print("that is an acute triangle")
+
+if pikachu == charmander:
+    if pikachu == math.sqrt(bulbasaur**2 + squirtle**2):
+        print("that is a right triangle")
+    elif pikachu**2 > bulbasaur**2 + squirtle**2:
+        print("that is an obtuse triangle")
+    elif pikachu**2 < bulbasaur**2 + squirtle**2:
+        print("that is an acute triangle")
+elif pikachu == bulbasaur:
+    if pikachu == math.sqrt(charmander**2 + squirtle**2):
+        print("that is a right triangle")
+    elif pikachu**2 > charmander**2 + squirtle**2:
+        print("that is an obtuse triangle")
+    elif pikachu**2 < charmander**2 + squirtle**2:
+        print("that is an acute triangle")
+elif pikachu == squirtle:
+    if pikachu == math.sqrt(bulbasaur**2 + charmander**2):
+        print("that is a right triangle")
+    elif pikachu**2 > bulbasaur**2 + charmander**2:
+        print("that is an obtuse triangle")
+    elif pikachu**2 < bulbasaur**2 + charmander**2:
+        print("that is an acute triangle")
+elif charmander == bulbasaur:
+    if squirtle**2 > charmander**2 + bulbasaur**2:
+        print("that is an obtuse triangle")
+    if squirtle**2 < charmander**2 + bulbasaur**2:
+        print("that is an acute triangle")
+    if squirtle**2 == charmander**2 + bulbasaur**2:
+        print("that is a right triangle")
+elif squirtle == bulbasaur:
+    if charmander**2 > squirtle**2 + bulbasaur**2:
+        print("that is an obtuse triangle")
+    if charmander**2 < squirtle**2 + bulbasaur**2:
+        print("that is an acute triangle")
+    if charmander**2 == squirtle**2 + bulbasaur**2:
+        print("that is a right triangle")
+elif charmander == squirtle:
+    if bulbasaur**2 > charmander**2 + squirtle**2:
+        print("that is an obtuse triangle")
+    if bulbasaur**2 < charmander**2 + squirtle**2:
+        print("that is an acute triangle")
+    if bulbasaur**2 == charmander**2 + squirtle**2:
+        print("that is a right triangle")

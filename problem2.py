@@ -10,3 +10,9 @@
 # Outputs:
 # "the number is an integer"
 # "the number is not an integer"
+
+Jo = str(int(input("a number")))
+if "." in Jo:
+    print("the number is not an integer")
+else:
+    print("the number is an integer")

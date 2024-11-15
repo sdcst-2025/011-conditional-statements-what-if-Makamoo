@@ -31,3 +31,14 @@ Enter a number: 10000
 
 
 """
+
+R = int(input("Enter a number s'il vous plait"))
+
+if 0 <= R < 10:
+    print("0")
+elif 10 <= R < 100:
+    print("1")
+elif 100 <= R < 1000:
+    print("2")
+elif R >= 1000:
+    print("3")

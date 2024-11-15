@@ -29,3 +29,15 @@ Enter c: 8
 the equation can not be factored
 
 """
+
+import math
+a = int(input("a:"))
+b = int(input("b:"))
+c = int(input("c:"))
+disc = float(b^2 - 4 * a * c)
+jukebox = int(disc)
+cat = float(jukebox)
+if math.sqrt(disc) == cat:
+    print("the equation can be factored")
+else:
+    print("the equation can not be factored")

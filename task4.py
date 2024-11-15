@@ -18,3 +18,10 @@ the sentence does not contain password
 Enter a sentence: The best password is no password.
 the sentence contains password
 """
+
+Nice = input("enter a sentence RIGHT NOW plz")
+
+if "password" in Nice:
+    print("the sentence contains password")
+else:
+    print("the sentence does not contain password")

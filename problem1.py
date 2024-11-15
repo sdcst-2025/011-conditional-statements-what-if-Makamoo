@@ -12,3 +12,12 @@
 # Outputs:
 # "the number is even"
 # "the number is odd"
+
+import math
+x = int(input("give me a whole number please"))
+N = x/2
+n = str(N)
+if ".5" in n:
+    print("the number is odd")
+else:
+    print("the number is even")

@@ -23,3 +23,15 @@
  Enter password: password
  Access denied
 """
+
+sword = input("enter username")
+
+if sword == "admin":
+    shield = input("enter password")
+else:
+    print("invalid loser")
+
+if shield == "12345password":
+    print("Access granted")
+else:
+    print("Access denied")
